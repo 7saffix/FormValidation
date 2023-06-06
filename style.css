@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form {
+    border-radius:5px;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    background-color: rgb(229, 253, 215);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form h4{
+    color:  rgb(44, 160, 131);
+    margin-bottom:14px;
+    font-weight: bolder;
+}
+.form-control {
+    position: relative;
+}
+.form input {
+    width: 300px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background: transparent;
+    outline: none;
+}
+.form-control i {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    visibility: hidden;
+}
+.btn {
+    width: 300px;
+    padding: 7px;
+    margin: 3px;
+    background-color: rgb(23, 121, 96);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+.form-control.success i.fa-circle-check {
+    color: green;
+    visibility: visible;
+}
+.form-control.failed i.fa-circle-exclamation {
+    color: red;
+    visibility: visible;
+}
+small {
+    margin: 5px;
+    color: red;
+}
